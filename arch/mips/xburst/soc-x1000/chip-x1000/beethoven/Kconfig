@@ -1,0 +1,15 @@
+choice
+prompt "Core Board Version"
+depends on PRODUCT_X1000_BEETHOVEN
+default BOARD_X1000_BEETHOVEN_V10
+
+config BOARD_X1000_BEETHOVEN_V10
+bool "board x1000 beethoven"
+depends on PRODUCT_X1000_BEETHOVEN
+
+endchoice
+
+config BOARD_NAME
+string
+default "beethoven_v10" if BOARD_X1000_BEETHOVEN_V10
+

@@ -1,0 +1,187 @@
+
+
+choice
+	prompt "Board type"
+	depends on SOC_X1000
+	default PRODUCT_X1000_PHOENIX
+
+config  PRODUCT_X1000_PHOENIX
+    bool "product x1000 phoenix"
+
+config	PRODUCT_X1000_HALLEY2
+	bool "product x1000 halley2"
+
+config	PRODUCT_X1000_ATHENA_EYES
+	bool "product x1000 athena_eyes"
+
+config	PRODUCT_X1000_SOLAR
+	bool "product x1000 solar"
+
+config  PRODUCT_X1000_IDRIVER
+        bool "product x1000 iDriver"
+
+config  PRODUCT_X1000_SPEAKER
+        bool "product x1000 speaker"
+
+config  PRODUCT_X1000_BEETHOVEN
+        bool "product x1000 beethoven"
+
+config  PRODUCT_X1000_SKYWORTH
+        bool "product x1000 skyworth"
+
+config  PRODUCT_X1000_ILOCK
+        bool "product x1000 ilock"
+
+config  PRODUCT_X1000_Z0
+	bool "product x1000 shanling_z0"
+
+config  PRODUCT_X1000_M0
+	bool "product x1000 shanling_m0"
+config  PRODUCT_X1000_M2X
+	bool "product x1000 shanling_m2x"
+config  PRODUCT_X1000_M5S
+	bool "product x1000 shanling_m5s"
+config PRODUCT_X1000_Q1
+	bool "product x1000 shanling_q1"
+config PRODUCT_X1000_M0PRO
+	bool "product x1000 shanling_m0pro"
+config PRODUCT_X1000_H5
+	bool "product x1000 shanling_h5"
+config PRODUCT_X1000_CD80
+	bool "product x1000 shanling_cd80"
+config PRODUCT_X1000_CA80
+	bool "product x1000 shanling_ca80"
+config PRODUCT_X1000_ECMINI
+	bool "product x1000 shanling_ecmini"
+
+
+
+
+endchoice
+
+if PRODUCT_X1000_PHOENIX
+config PRODUCT_NAME
+string
+default "phoenix"
+source "arch/mips/xburst/soc-x1000/chip-x1000/phoenix/Kconfig"
+endif
+
+if PRODUCT_X1000_HALLEY2
+config PRODUCT_NAME
+string
+default "halley2"
+source "arch/mips/xburst/soc-x1000/chip-x1000/halley2/Kconfig"
+endif
+
+if PRODUCT_X1000_ATHENA_EYES
+config PRODUCT_NAME
+string
+default "athena_eyes"
+source "arch/mips/xburst/soc-x1000/chip-x1000/athena_eyes/Kconfig"
+endif
+
+if PRODUCT_X1000_SOLAR
+config PRODUCT_NAME
+string
+default "solar"
+source "arch/mips/xburst/soc-x1000/chip-x1000/solar/Kconfig"
+endif
+
+if PRODUCT_X1000_IDRIVER
+config PRODUCT_NAME
+string
+default "idriver"
+source "arch/mips/xburst/soc-x1000/chip-x1000/idriver/Kconfig"
+endif
+
+if PRODUCT_X1000_SPEAKER
+config PRODUCT_NAME
+string
+default "speaker"
+source "arch/mips/xburst/soc-x1000/chip-x1000/speaker/Kconfig"
+endif
+
+if PRODUCT_X1000_BEETHOVEN
+config PRODUCT_NAME
+string
+default "beethoven"
+source "arch/mips/xburst/soc-x1000/chip-x1000/beethoven/Kconfig"
+endif
+
+if PRODUCT_X1000_SKYWORTH
+config PRODUCT_NAME
+string
+default "skyworth"
+source "arch/mips/xburst/soc-x1000/chip-x1000/skyworth/Kconfig"
+endif
+
+if PRODUCT_X1000_ILOCK
+config PRODUCT_NAME
+string
+default "ilock"
+source "arch/mips/xburst/soc-x1000/chip-x1000/ilock/Kconfig"
+endif
+
+if PRODUCT_X1000_Z0
+config PRODUCT_NAME
+string
+default "z0"
+source "arch/mips/xburst/soc-x1000/chip-x1000/z0/Kconfig"
+endif
+
+if PRODUCT_X1000_M0
+config PRODUCT_NAME
+string
+default "m0"
+source "arch/mips/xburst/soc-x1000/chip-x1000/m0/Kconfig"
+endif
+
+if PRODUCT_X1000_M2X
+config PRODUCT_NAME
+string
+default "m2x"
+source "arch/mips/xburst/soc-x1000/chip-x1000/m2x/Kconfig"
+endif
+
+if PRODUCT_X1000_M5S
+config PRODUCT_NAME
+string
+default "m5s"
+source "arch/mips/xburst/soc-x1000/chip-x1000/m5s/Kconfig"
+endif
+if PRODUCT_X1000_Q1
+config PRODUCT_NAME
+string
+default "q1"
+source "arch/mips/xburst/soc-x1000/chip-x1000/q1/Kconfig"
+endif
+if PRODUCT_X1000_M0PRO
+config PRODUCT_NAME
+string
+default "m0pro"
+source "arch/mips/xburst/soc-x1000/chip-x1000/m0pro/Kconfig"
+endif
+if PRODUCT_X1000_H5
+config PRODUCT_NAME
+string
+default "h5"
+source "arch/mips/xburst/soc-x1000/chip-x1000/h5/Kconfig"
+endif
+if PRODUCT_X1000_CD80
+config PRODUCT_NAME
+string
+default "cd80"
+source "arch/mips/xburst/soc-x1000/chip-x1000/cd80/Kconfig"
+endif
+if PRODUCT_X1000_CA80
+config PRODUCT_NAME
+string
+default "ca80"
+source "arch/mips/xburst/soc-x1000/chip-x1000/ca80/Kconfig"
+endif
+if PRODUCT_X1000_ECMINI
+config PRODUCT_NAME
+string
+default "ecmini"
+source "arch/mips/xburst/soc-x1000/chip-x1000/ecmini/Kconfig"
+endif

@@ -1,0 +1,23 @@
+menuconfig FINGERPRINT
+	bool "Fingerprint sensor support"
+
+if FINGERPRINT
+config FINGERPRINT_MICROARRAY
+	bool "MicroArray fingerprint sensor"
+	depends on JZ_SPI
+	help
+	  Support for MicroArray fingerPrint.
+
+config FINGERPRINT_GOODIX_GF5X
+	bool "Goodix GF5X fingerprint sensor"
+	depends on JZ_SPI
+	help
+	  Support for Goodix GF5X fingerprint.
+
+config FINGERPRINT_FPC
+	bool "FPC fingerprint sensor"
+	depends on JZ_SPI
+	help
+	  Support for FPC fingerprint.
+
+endif

@@ -1,0 +1,15 @@
+choice
+prompt "Core Board Version"
+depends on PRODUCT_X1000_ILOCK
+default BOARD_X1000_ILOCK
+
+config BOARD_X1000_ILOCK
+bool "board x1000 ilock"
+depends on PRODUCT_X1000_ILOCK
+
+endchoice
+
+config BOARD_NAME
+string
+default "ilock" if BOARD_X1000_ILOCK
+

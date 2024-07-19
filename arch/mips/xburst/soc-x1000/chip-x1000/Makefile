@@ -1,0 +1,20 @@
+
+obj-$(CONFIG_PRODUCT_X1000_PHOENIX)		+= phoenix/
+obj-$(CONFIG_PRODUCT_X1000_HALLEY2)		+= halley2/
+obj-$(CONFIG_PRODUCT_X1000_Z0)			+= z0/
+obj-$(CONFIG_PRODUCT_X1000_M0)			+= m0/
+obj-$(CONFIG_PRODUCT_X1000_M2X)          += m2x/
+obj-$(CONFIG_PRODUCT_X1000_M5S)			+= m5s/
+obj-$(CONFIG_PRODUCT_X1000_Q1)         += q1/
+obj-$(CONFIG_PRODUCT_X1000_M0PRO)			+= m0pro/
+obj-$(CONFIG_PRODUCT_X1000_H5)			+= h5/
+obj-$(CONFIG_PRODUCT_X1000_CD80)			+= cd80/
+obj-$(CONFIG_PRODUCT_X1000_CA80)			+= ca80/
+obj-$(CONFIG_PRODUCT_X1000_ECMINI)			+= ecmini/
+obj-$(CONFIG_PRODUCT_X1000_ATHENA_EYES)		+= athena_eyes/
+obj-$(CONFIG_PRODUCT_X1000_SOLAR)		+= solar/
+obj-$(CONFIG_PRODUCT_X1000_IDRIVER)             += idriver/
+obj-$(CONFIG_PRODUCT_X1000_SPEAKER)             += speaker/
+obj-$(CONFIG_PRODUCT_X1000_BEETHOVEN)             += beethoven/
+obj-$(CONFIG_PRODUCT_X1000_SKYWORTH)             += skyworth/
+obj-$(CONFIG_PRODUCT_X1000_ILOCK)             += ilock/
